@@ -20,4 +20,4 @@ jobs:
         git config --global user.name 'Jayden Richardson'
         git config --global user.email 'jsrich@hotmail.co.nz'
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN}}@github.com/${{ github.repository }}
-        npm run deploy
+        CI=false npm run deploy
