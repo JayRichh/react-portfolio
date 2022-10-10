@@ -88,7 +88,7 @@ export const Projects = () => {
                   <h2>Projects</h2>
                   <p>
                     Currently working daily to improve my skills and learn new
-                    technologies. Here are some of my recent projects.
+                    technologies. Here are some of my recent projects with React & Javascript.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
