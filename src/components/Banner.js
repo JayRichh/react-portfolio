@@ -5,12 +5,14 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import { HashLink } from "react-router-hash-link";
+import Wave from "react-wavify";
+import spaceKiwi from "../assets/img/space-kiwi.png";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
-  const [delta, setDelta] = useState(100 - Math.random() * 100); 
+  const [delta, setDelta] = useState(100 - Math.random() * 100);
   // eslint-disable-next-line
   const [index, setIndex] = useState(1);
   const toRotate = [
@@ -70,7 +72,12 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline">Welcome to my Portfolio</span>
+                  <img
+                    src={spaceKiwi}
+                    alt="space kiwi"
+                    className="space-kiwi"
+                  ></img>
+                  {/* <span className="tagline">Welcome to my Portfolio</span> */}
                   <h1>
                     {`Hi! I'm Jayden.`} <br></br>
                     <span
@@ -81,7 +88,8 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    Electrical Engineering professional turned Web Developer.
+                    Kiwi based in the UK, passionate about all things web
+                    development.
                   </p>
                   <a id="connect_href" href="#connect">
                     <button onClick={() => console.log("connect")}>
@@ -107,6 +115,23 @@ export const Banner = () => {
           </Col>
         </Row>
       </Container>
+      {/* <svg id="wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill-opacity="1"
+          d="M0,224L48,208C96,192,192,160,288,170.7C384,181,480,235,576,234.7C672,235,768,181,864,154.7C960,128,1056,128,1152,138.7C1248,149,1344,171,1392,181.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg> */}
+      <Wave
+        id="movingWave1"
+        fill="#121212"
+        paused={false}
+        options={{
+          height: 20,
+          amplitude: 20,
+          speed: 0.15,
+          points: 3,
+        }}
+      />
     </section>
   );
 };

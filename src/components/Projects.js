@@ -75,6 +75,12 @@ export const Projects = () => {
 
   return (
     <section className="project" id="projects">
+      {/* <svg id="wave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill-opacity="1"
+          d="M0,192L40,176C80,160,160,128,240,112C320,96,400,96,480,122.7C560,149,640,203,720,192C800,181,880,107,960,101.3C1040,96,1120,160,1200,181.3C1280,203,1360,181,1400,170.7L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg> */}
       <Container>
         <Row>
           <Col size={12}>
@@ -88,7 +94,8 @@ export const Projects = () => {
                   <h2>Projects</h2>
                   <p>
                     Currently working daily to improve my skills and learn new
-                    technologies. Here are some of my recent projects with React & Javascript.
+                    technologies. Here are some of my recent projects with React
+                    & Javascript.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -109,7 +116,7 @@ export const Projects = () => {
                     <Tab.Content
                       id="slideInUp"
                       className={
-                        isVisible ? "animate__animated animate__slideInUp" : ""
+                        isVisible ? "animate__animated animate__fadeInUp" : ""
                       }
                     >
                       <Tab.Pane eventKey="first">
@@ -148,7 +155,14 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2} alt={''}></img>
+      <img className="background-image-right" src={colorSharp2} alt={""}></img>
+      {/* <svg id="wave3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#a2d9ff"
+          fill-opacity="1"
+          d="M0,192L40,165.3C80,139,160,85,240,90.7C320,96,400,160,480,181.3C560,203,640,181,720,170.7C800,160,880,160,960,154.7C1040,149,1120,139,1200,122.7C1280,107,1360,85,1400,74.7L1440,64L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+        ></path>
+      </svg> */}
     </section>
   );
 };

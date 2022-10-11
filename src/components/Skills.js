@@ -6,6 +6,7 @@ import "react-multi-carousel/lib/styles.css";
 // import arrow1 from "../assets/img/arrow1.svg";
 // import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png";
+import Wave from "react-wavify";
 
 export const Skills = () => {
   const responsive = {
@@ -55,6 +56,13 @@ export const Skills = () => {
                 responsive={responsive}
                 infinite={true}
                 className="owl-carousel owl-theme skill-slider"
+                autoPlay={true}
+                autoPlaySpeed={4000}
+                customTransition="all 2s"
+                transitionDuration={4000}
+                draggable={true}
+                swipeable={true}
+                showDots={false}
               >
                 <div className="item">
                   {/* <img src={meter1} alt="" /> */}
@@ -94,6 +102,17 @@ export const Skills = () => {
         </div>
       </div>
       <img className="background-image-left" src={colorSharp} alt="" />
+      <Wave
+        id="movingWave2"
+        fill="#000"
+        paused={false}
+        options={{
+          height: 20,
+          amplitude: 20,
+          speed: 0.15,
+          points: 4,
+        }}
+      />
     </section>
   );
 };
