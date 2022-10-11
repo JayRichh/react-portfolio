@@ -10,7 +10,7 @@ export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(100 - Math.random() * 100); 
   // eslint-disable-next-line
   const [index, setIndex] = useState(1);
   const toRotate = [
@@ -22,6 +22,7 @@ export const Banner = () => {
 
   useEffect(() => {
     let ticker = setInterval(() => {
+      // console.log(delta)
       tick();
     }, delta);
     return () => {
@@ -51,7 +52,7 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(500);
+      setDelta(200);
     } else {
       setIndex((prevIndex) => prevIndex + 1);
     }
@@ -60,7 +61,7 @@ export const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="aligh-items-center">
+        <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) => (
@@ -74,7 +75,6 @@ export const Banner = () => {
                     {`Hi! I'm Jayden.`} <br></br>
                     <span
                       className="txt-rotate"
-                      dataperiod="1000"
                       data-rotate='[ "Web Developer.", "Engineering Professional.", "Web Designer." ]'
                     >
                       <span className="wrap">{text}</span>

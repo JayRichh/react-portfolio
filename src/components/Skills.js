@@ -39,7 +39,7 @@ export const Skills = () => {
                 In a past life I was hands on, delving in to control panels for
                 large industrial manufacturing facilities as an Industrial
                 Electrician. After this I progressed to pricing, designing and
-                implimenting these control and electrical systems. This taught
+                implementing these control and electrical systems. This taught
                 me how to approach problems from every possible angle until a
                 solution is made clear.
                 <br></br>
