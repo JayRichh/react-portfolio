@@ -50,6 +50,13 @@ export const Skills = () => {
                 to be a capable full-stack developer. Projects range from some
                 pretty serious hand holding in the beginning to "Go on kid. Make
                 Facebook. You'll figure it out." I've been hooked. Big time.
+                <br></br>
+                <br></br>
+                From getting stuck until I figure out how to be unstuck, along
+                with making mistakes and learning from every one of them is
+                invigorating. The mix of creativity and chaos from coding
+                propels me to keep going through the speedbumps of learning new
+                technologies.
               </p>
               <h4>Skills</h4>
               <Carousel
