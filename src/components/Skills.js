@@ -58,10 +58,8 @@ export const Skills = () => {
                 className="owl-carousel owl-theme skill-slider"
                 autoPlay={true}
                 autoPlaySpeed={4000}
-                customTransition="all 2s"
-                transitionDuration={4000}
-                draggable={true}
-                swipeable={true}
+                draggable={false}
+                swipeable={false}
                 showDots={false}
               >
                 <div className="item">
