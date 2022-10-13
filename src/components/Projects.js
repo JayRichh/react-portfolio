@@ -6,7 +6,7 @@ import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
 import projImg5 from "../assets/img/project-img5.png";
 import projImg6 from "../assets/img/project-img6.png";
-// import projImg7 from "../assets/img/project-img7.jpg";
+import projImg7 from "../assets/img/project-img7.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -22,17 +22,17 @@ export const Projects = () => {
       liveUrl: "https://jayrichh.github.io/cv-project/",
     },
     {
+      title: "Blog Website (Adding Features)",
+      description:
+        "Plan the scope for projects, utilise Firebase for backend, and use React to create a blog website with authentication, CRUD operations, and a database",
+      imgUrl: projImg7,
+      repoUrl: "https://github.com/JayRichh/blog-app",
+      liveUrl: "https://blog-app-1169d.web.app/",
+    },
+    {
       title: "Memory Card Game (Work In Progress)",
       description:
         "Along with components, utilise props, state, and hooks to create a memory card game",
-      imgUrl: "https://png.pngitem.com/pimgs/s/207-2073499_translate-platform-from-english-to-spanish-work-in.png",
-      repoUrl: "",
-      liveUrl: "",
-    },
-    {
-      title: "Blog Website (Work In Progress)",
-      description:
-        "Plan the scope for projects, utilise Firebase for backend, and use React to create a blog website with authentication, CRUD operations, and a database",
       imgUrl: "https://png.pngitem.com/pimgs/s/207-2073499_translate-platform-from-english-to-spanish-work-in.png",
       repoUrl: "",
       liveUrl: "",
