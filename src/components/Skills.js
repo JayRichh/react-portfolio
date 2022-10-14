@@ -75,7 +75,7 @@ export const Skills = () => {
                   <i className="devicon-html5-plain-wordmark colored"></i>
                   <i className="devicon-javascript-plain colored"></i>
                   <i className="devicon-react-original-wordmark colored"></i>
-                  <h5>Languages</h5>
+                  <h5>Front End</h5>
                 </div>
                 <div className="item">
                   {/* <img src={meter2} alt="" /> */}
