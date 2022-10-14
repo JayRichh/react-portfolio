@@ -136,8 +136,7 @@ export const Projects = () => {
                         <p>
                           Working on a few more projects, will be adding them to
                           this section soon. Progressing with a memory card game
-                          and then looking at a shopping cart application and
-                          full-stack blog with Firebase.
+                          and then planning a shopping cart application.
                         </p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
