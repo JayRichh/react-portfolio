@@ -74,13 +74,15 @@ export const Skills = () => {
                   <i className="devicon-css3-plain-wordmark colored"></i>
                   <i className="devicon-html5-plain-wordmark colored"></i>
                   <i className="devicon-javascript-plain colored"></i>
+                  <i className="devicon-react-original-wordmark colored"></i>
                   <h5>Languages</h5>
                 </div>
                 <div className="item">
                   {/* <img src={meter2} alt="" /> */}
                   <i className="devicon-jest-plain colored"></i>
-                  <i className="devicon-react-original-wordmark colored"></i>
                   <i className="devicon-sass-original colored"></i>
+                  <i className="devicon-bootstrap-plain-wordmark colored"></i>
+                  <i className="devicon-firebase-plain-wordmark colored"></i>
                   <h5>Frameworks</h5>
                 </div>
                 <div className="item">
@@ -99,6 +101,8 @@ export const Skills = () => {
                   <i className="devicon-ubuntu-plain-wordmark colored"></i>
                   <i className="devicon-windows8-original colored"></i>
                   <i className="devicon-google-plain colored"></i>
+                  <i className="devicon-chrome-plain-wordmark colored"></i>
+                  <i className="devicon-slack-plain-wordmark colored"></i>
                   <h5>Other</h5>
                 </div>
               </Carousel>
