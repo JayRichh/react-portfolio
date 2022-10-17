@@ -92,7 +92,7 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col size={12}>
-            <TrackVisibility>
+            <TrackVisibility partialVisibility>
               {({ isVisible }) => (
                 <div
                   className={

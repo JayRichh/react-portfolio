@@ -52,7 +52,7 @@ export const Contact = () => {
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
-            <TrackVisibility>
+            <TrackVisibility partialVisibility>
               {({ isVisible }) => (
                 <img
                   className={
@@ -65,7 +65,7 @@ export const Contact = () => {
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
-            <TrackVisibility>
+            <TrackVisibility partialVisibility>
               {({ isVisible }) => (
                 <div
                   className={
