@@ -16,14 +16,14 @@ const BackgroundCircles = () => {
       transition={{
         duration: 2.5,
       }}
-      className="pointer-events-none relative flex justify-center items-center"
+      className="pointer-events-none relative flex justify-center items-center w-full h-full overflow-hidden"
       id="circles-div"
     >
-      <div className="pointer-events-none absolute border border-[#333333] opacity-10 rounded-full h-[200px] w-[200px] animate-ping" />
-      <div className="pointer-events-none border border-[#333333] opacity-10 rounded-full h-[300px] w-[300px] absolute" />
-      <div className="pointer-events-none rounded-full border border-[#333333] opacity-5 h-[500px] w-[500px] absolute" />
+      <div className="pointer-events-none absolute border border-[#333333] opacity-20 rounded-full h-[200px] w-[200px] animate-ping" />
+      <div className="pointer-events-none border border-[#333333] opacity-10 rounded-full h-[300px] w-[300px] absolute animate-pulse" />
+      {/* <div className="pointer-events-none rounded-full border border-[#333333] opacity-10 h-[470px] w-[470px] absolute animate-pulse" />
       <div className="pointer-events-none rounded-full border border-[#721cac] opacity-10 h-[650px] w-[650px] absolute animate-pulse" />
-      <div className="pointer-events-none border border-[#333333] opacity-5 rounded-full h-[850px] w-[850px] absolute" />
+      <div className="pointer-events-none border border-[#333333] opacity-5 rounded-full h-[850px] w-[850px] absolute" /> */}
     </motion.div>
   );
 };
