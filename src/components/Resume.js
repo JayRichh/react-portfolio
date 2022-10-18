@@ -28,8 +28,9 @@ const Resume = () => {
           <iframe
             src={JRResume}
             title="Jayden's Resume"
-            width="100%"
+            frameborder="0"
             height="100%"
+            width="100%"
           ></iframe>
         </Modal.Body>
         <Modal.Footer>
