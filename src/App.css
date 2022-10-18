@@ -374,7 +374,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 @keyframes flyAcrossScreenV2 {
   0% {
-    transform: translateX(-22.5vw) translateY(5vh) rotate(270deg) scale(1.2);
+    transform: translateX(-25.5vw) translateY(5vh) rotate(270deg) scale(1.2);
   }
   10% {
     transform: translateX(-5vw) translateY(-2.5vh) rotate(330deg) scale(1);
