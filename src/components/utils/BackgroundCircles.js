@@ -23,7 +23,7 @@ const BackgroundCircles = () => {
       <div className="pointer-events-none border border-[#333333] opacity-10 rounded-full h-[300px] w-[300px] absolute" />
       <div className="pointer-events-none rounded-full border border-[#333333] opacity-5 h-[500px] w-[500px] absolute" />
       <div className="pointer-events-none rounded-full border border-[#721cac] opacity-10 h-[650px] w-[650px] absolute animate-pulse" />
-      <div className="pointer-events-none border border-[#333333] opacity-5 rounded-full h-[750px] w-[750px] absolute" />
+      <div className="pointer-events-none border border-[#333333] opacity-5 rounded-full h-[850px] w-[850px] absolute" />
     </motion.div>
   );
 };
