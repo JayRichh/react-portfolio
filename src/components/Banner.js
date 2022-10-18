@@ -1,13 +1,16 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.png";
+import headerImg from "../assets/img/profile-picture.png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+// eslint-disable-next-line
 import { HashLink } from "react-router-hash-link";
 import Wave from "react-wavify";
 import spaceKiwi from "../assets/img/space-kiwi.png";
 import Resume from "./Resume";
+import BackgroundCircles from "./utils/BackgroundCircles";
+import Planet from "../assets/img/planet.png";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -62,7 +65,6 @@ export const Banner = () => {
     }
   };
 
-
   return (
     <section className="banner" id="home">
       <Container>
@@ -104,27 +106,31 @@ export const Banner = () => {
               )}
             </TrackVisibility>
           </Col>
-          <Col xs={12} md={6} xl={5}>
+          <Col xs={12} md={6} xl={5} id="image-container">
             <TrackVisibility partialVisibility>
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
+                    isVisible
+                      ? "animate__animated animate__zoomIn relative"
+                      : "relative"
                   }
+                  id="image-div"
                 >
-                  <img src={headerImg} alt="Header Img" />
+                  <BackgroundCircles />
+                  <img
+                    src={headerImg}
+                    alt="Header Img"
+                    className="profile-pic"
+                  />
+                  <img src={Planet} alt="Planet" className="planet" />
+                  <BackgroundCircles />
                 </div>
               )}
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
-      {/* <svg id="wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill-opacity="1"
-          d="M0,224L48,208C96,192,192,160,288,170.7C384,181,480,235,576,234.7C672,235,768,181,864,154.7C960,128,1056,128,1152,138.7C1248,149,1344,171,1392,181.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-        ></path>
-      </svg> */}
       <Wave
         id="movingWave1"
         fill="#121212"

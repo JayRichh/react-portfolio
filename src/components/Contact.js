@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-man.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+// eslint
 import { useForm, ValidationError } from "@formspree/react";
 
 export const Contact = () => {
