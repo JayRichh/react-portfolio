@@ -124,7 +124,6 @@ export const Banner = () => {
                     className="profile-pic"
                   />
                   <img src={Planet} alt="Planet" className="planet" />
-                  <BackgroundCircles />
                 </div>
               )}
             </TrackVisibility>

@@ -357,9 +357,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: absolute;
   right: 50%;
   top: 50%;
-  transform: translate(51%, -54%) rotate(140deg) skew(-10deg, 10deg);
+  transform: translate(52%, -53%) rotate(180deg);
   border-radius: 42% 57%;
-  filter: drop-shadow(0 0 30px #4597da) hue-rotate(330deg) brightness(1.0) saturate(1) grayscale(0.5) opacity(0.9);
+  filter: drop-shadow(0 0 35px #4597da) hue-rotate(330deg) brightness(1.0) saturate(1) grayscale(0.5) opacity(0.9);
 }
 .space-kiwi {
   position: absolute;
