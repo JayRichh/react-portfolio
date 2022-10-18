@@ -1,3 +1,7 @@
+/** Tailwind import **/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /************ Custom Font ************/
 @font-face {
   font-family: Centra;
@@ -245,7 +249,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 400px 0 200px 0;
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, #121212 85%),
     url(./assets/img/banner-bg.png) no-repeat center center;
   background-position: top center;
@@ -278,13 +282,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   display: block;
   z-index: 99;
+  white-space: nowrap;
 }
 .banner h1 span {
   font-size: 45px;
   font-weight: 500;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 40px;
+  }
+  .banner h1 span {
+    font-size: 30px;
+  }
 }
 .banner p {
   color: #b8b8b8;
@@ -318,52 +332,40 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner img:not(.space-kiwi) {
-  animation: updown 5s ease-in-out infinite;
-  /* Create slight dark purple filter */
-  filter: brightness(0.95) saturate(100%) invert(0%) sepia(2%) saturate(95%)
-    hue-rotate(320deg) brightness(95%) contrast(95%);
-    /* 310-320 rotate */
+#circles-div {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+#image-div {
+  min-height: 500px;
+}
+.banner img.profile-pic {
+  width: 200px;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  z-index: 1;
+  /* border: 8px solid rgb(73, 131, 218);
+  border-radius: 42% 57%;
+  filter: drop-shadow(0 0 13px #53a2e2); */
+}
+.banner img.planet {
+  width: 370px;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(51%, -54%) rotate(140deg) skew(-10deg, 10deg);
+  border-radius: 42% 57%;
+  filter: drop-shadow(0 0 30px #4597da) hue-rotate(330deg) brightness(1.0) saturate(1) grayscale(0.5) opacity(0.9);
 }
 .space-kiwi {
   position: absolute;
   width: 100px;
   animation: flyAcrossScreenV2 20s linear infinite;
   z-index: -1;
-}
-/* @keyframes flyAcrossScreen {
-  0% {
-    transform: translateX(-20vw) translateY(-10vh) rotate(0deg) scale(0.7);
-  }
-  25% {
-    transform: translateX(10vw) translateY(-15vh) rotate(45deg) scale(1);
-  }
-  50% {
-    transform: translateX(40.5vw) translateY(-15vh) rotate(90deg) scale(0.75);
-  }
-  75% {
-    transform: translateX(70vw) translateY(-20vh) rotate(180deg) scale(0.5);
-  }
-  100% {
-    transform: translateX(100vw) translateY(-25vh) rotate(270deg) scale(0.3);
-  }
-} */
-@keyframes flyAcrossScreen {
-  0% {
-    transform: translateX(-20vw) translateY(-10vh) rotate(0deg) scale(0.7);
-  }
-  25% {
-    transform: translateX(0vw) translateY(-15vh) rotate(45deg) scale(1);
-  }
-  50% {
-    transform: translateX(20.5vw) translateY(-15vh) rotate(90deg) scale(0.8);
-  }
-  75% {
-    transform: translateX(50vw) translateY(-20vh) rotate(180deg) scale(0.4);
-  }
-  100% {
-    transform: translateX(75vw) translateY(-25vh) rotate(270deg) scale(0);
-  }
 }
 @keyframes flyAcrossScreenV2 {
   0% {
@@ -406,7 +408,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 .txt-rotate > .wrap {
-  border-right: 0.08em solid #666;
+  border-right: 0.08em solid rgb(121, 118, 118);
 }
 
 /************ Skills Css ************/
@@ -531,7 +533,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Projects Css ************/
 
 .project {
-  padding: 75px 0 100px 0;
+  padding: 150px 0 200px 0;
   position: relative;
   background-color: black;
 }
@@ -551,6 +553,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
   padding: 25px 0;
 }
+.project p:last-child {
+  padding: 100px 0;
+}
+
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
@@ -697,7 +703,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
-  padding: 90px 0 110px 0;
+  padding: 150px 0 150px 0;
 }
 .contact img {
   width: 92%;
